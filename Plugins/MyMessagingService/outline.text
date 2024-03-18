@@ -1,0 +1,21 @@
+var MyMessagingService = {
+    pluginName: "XMPPService",
+    description: "Messaging Service built using XMPP protocol.",
+    options: {},
+    isDefaultMessagingService: false,
+    protocol: "XMPP",
+    XMPP: null,
+
+    Init: function(){
+        this.XMPP = "ruben";
+    }
+
+    Test: function(){
+        console.log(this.XMPP);
+    }
+}
+
+x = MyMessagingService;
+x.Init();
+x.Test();
+>> undefind
