@@ -1,0 +1,11 @@
+{
+  "name": "my_plugin",
+  "version": "1.0.0",
+  "author": "Your Name ruben@siperb.com",
+  "main": "plugin.js",
+  "scripts": {
+    "test": "helloworld"
+  },
+  "license": "ISC",
+  "description": ""
+}
