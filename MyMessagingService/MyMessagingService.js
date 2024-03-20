@@ -41,9 +41,8 @@ export const MyMessagingService = {
 
         // REQUIRED VARIABLES
         try{
-            MyMessagingService.debug(`ProfileUser: ${profileUser}`);
-            MyMessagingService.debug(`SipPassword: ${SipPassword}`);
-
+            MyMessagingService.warn(`ProfileUser: ${profileUser}`);
+            MyMessagingService.warn(`SipPassword: ${SipPassword}`);
         }
         catch(e){
             MyMessagingService.log("ERROR: Missing required variables.");
