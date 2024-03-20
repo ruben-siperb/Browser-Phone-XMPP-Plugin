@@ -7,7 +7,7 @@
     "test": "Init"
   },
   "peerDependencies": {
-    "strophe.js" : "@latest"
+    "strophe.js" : "2.0.0"
   },
   "license": "ISC",
   "description": ""
