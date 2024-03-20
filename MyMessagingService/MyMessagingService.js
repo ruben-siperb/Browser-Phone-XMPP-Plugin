@@ -45,6 +45,10 @@ export const MyMessagingService = {
             MyMessagingService.warn(`SipPassword: ${SipPassword}`);
         }
         catch(e){
+
+            profileUser = MyMessagingService.options.profileUser ? MyMessagingService.options.profileUser : "undefined profile user";
+            SipPassword = MyMessagingService.options.SipPassword ? MyMessagingService.options.SipPassword : "undefined profile user";
+
             MyMessagingService.log("ERROR: Missing required variables.");
             MyMessagingService.log(e);
         }
