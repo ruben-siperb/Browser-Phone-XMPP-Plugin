@@ -1525,3 +1525,5 @@ let MyMessagingService = {
 
 
 }
+
+module.exports = MyMessagingService;
