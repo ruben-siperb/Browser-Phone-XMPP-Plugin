@@ -9,6 +9,12 @@
 /**
  * @exports MyMessagingService
  */
+
+// import strophe.js
+// TODO: 
+import * as Strophe from 'strophe.js';
+
+
 export const MyMessagingService = {
     pluginName: "XMPPService",
     description: "Messaging Service built using XMPP protocol.",

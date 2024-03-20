@@ -6,6 +6,9 @@
   "scripts": {
     "test": "Init"
   },
+  "peerDependencies": {
+    "strophe.js" : "@latest"
+  },
   "license": "ISC",
   "description": ""
 }
