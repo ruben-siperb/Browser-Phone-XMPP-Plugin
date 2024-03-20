@@ -6,7 +6,10 @@
  * @author Ruben van Bread - ruben@siperb.com
  * Date Modified: 15 March  2024
  */
-let MyMessagingService = {
+/**
+ * @exports MyMessagingService
+ */
+export const MyMessagingService = {
     pluginName: "XMPPService",
     description: "Messaging Service built using XMPP protocol.",
     options: {
@@ -35,8 +38,19 @@ let MyMessagingService = {
         // Display the Configurations for the Plugin Options //
         MyMessagingService.debug(`OPTIONS -----------------`);
         MyMessagingService.debug(MyMessagingService.options);
-        MyMessagingService.debug(`ProfileUser: ${profileUser}`);
-        MyMessagingService.debug(`SipPassword: ${SipPassword}`);
+
+        // REQUIRED VARIABLES
+        try{
+            MyMessagingService.debug(`ProfileUser: ${profileUser}`);
+            MyMessagingService.debug(`SipPassword: ${SipPassword}`);
+
+        }
+        catch(e){
+            MyMessagingService.log("ERROR: Missing required variables.");
+            MyMessagingService.log(e);
+        }
+
+        
         MyMessagingService.debug('---------------------------');
     },
 
@@ -1526,4 +1540,3 @@ let MyMessagingService = {
 
 }
 
-module.exports = MyMessagingService;
