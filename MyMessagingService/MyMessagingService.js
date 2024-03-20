@@ -14,7 +14,7 @@
 // TODO: 
 // npm install strophe.js
 
-import * as Strophe from 'strophe.js';
+import {Strophe}  from 'strophe.js';
 
 
 export const MyMessagingService = {
@@ -102,6 +102,11 @@ export const MyMessagingService = {
             return;
         }
 
+        // Check that Strophe is installed
+        if(Strophe === undefined || Strophe === null) {
+            MyMessagingService.warn("Strophe is not installed.\n Please install Strophe using the following command:\nnpm install strophe.js");
+            return;
+        }
 
         // Strophe Connection
         MyMessagingService.XMPP = new Strophe.Connection(xmpp_websocket_uri);
