@@ -1,8 +1,8 @@
 {
-  "name": "XmppMessanger",
+  "name": "xmpp_messaging_service",
   "version": "1.0.0",
-  "author": "Your Name ruben@siperb.com",
-  "main": "MyMessagingService/MyMessagingService.js",
+  "author": "ruben@siperb.com",
+  "main": "./MyMessagingService/MyMessagingService.js",
   "scripts": {
     "test": "Init"
   },
