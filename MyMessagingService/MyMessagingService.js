@@ -25,7 +25,7 @@ let MyMessagingService = {
      * @description Initialise the Plugin with the needed configuration options
      * @param {*} options 
      */
-    Init: function (options) {
+    Init: function (options={}) {
 
         MyMessagingService.log("Initialising with options.");
         MyMessagingService.options = options;
