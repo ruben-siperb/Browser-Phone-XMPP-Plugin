@@ -1,10 +1,10 @@
 {
-  "name": "my_plugin",
+  "name": "XmppMessanger",
   "version": "1.0.0",
   "author": "Your Name ruben@siperb.com",
-  "main": "plugin.js",
+  "main": "MyMessagingService/MyMessagingService.js",
   "scripts": {
-    "test": "helloworld"
+    "test": "Init"
   },
   "license": "ISC",
   "description": ""
