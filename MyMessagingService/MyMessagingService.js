@@ -12,6 +12,8 @@
 
 // import strophe.js
 // TODO: 
+// npm install strophe.js
+
 import * as Strophe from 'strophe.js';
 
 
